@@ -39,11 +39,11 @@ const invertTree = (root: TreeNode | null): TreeNode | null => {
 }
 
 const isTreeNode = (root: any): root is TreeNode => {
-  return root != null
-    && typeof root === 'object'
-    && typeof root.val === 'number'
-    && typeof root.left === 'object'
-    && typeof root.right === 'object'
+  return root != null &&
+    typeof root === 'object' &&
+    typeof root.val === 'number' &&
+    typeof root.left === 'object' &&
+    typeof root.right === 'object'
 }
 
 console.log(root)
@@ -51,5 +51,3 @@ console.log(root)
 invertTree(root)
 
 console.log(root)
-
-
